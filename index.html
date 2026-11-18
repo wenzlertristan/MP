@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Orévia Soins — Magnétisme &amp; Énergétique à Mesland</title>
-<meta name="description" content="Orévia Soins — Cabinet de magnétisme et énergétique à Mesland (Loir-et-Cher), par Marie-Pierre Villermain. Séances individuelles au cabinet ou en visioconférence. Écoute, bienveillance, accompagnement énergétique.">
+<meta name="description" content="Orévia Soins — Cabinet de magnétisme et énergétique à Mesland (Loir-et-Cher), par Marie-Pierre Villermain. Séances individuelles au cabinet ou en Visio. Écoute, bienveillance, accompagnement énergétique.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
   "@context": "https://schema.org",
   "@type": "HealthAndBeautyBusiness",
   "name": "Orévia Soins",
-  "description": "Cabinet de magnétisme et énergétique à Mesland (Loir-et-Cher), par Marie-Pierre Villermain. Séances individuelles au cabinet ou en visioconférence.",
+  "description": "Cabinet de magnétisme et énergétique à Mesland (Loir-et-Cher), par Marie-Pierre Villermain. Séances individuelles au cabinet ou en Visio.",
   "url": "https://orevia-soins.fr",
   "telephone": "",
   "address": {
@@ -588,7 +588,7 @@ body::before {
 
 /* ---- CTA ---- */
 .cta-section {
-  background: var(--bg-dark);
+  background: #3D6355;
   padding-block: 7rem;
   text-align: center;
   color: #EEE4D6;
@@ -1019,6 +1019,37 @@ footer { background: #322820; color: #EEE4D6; }
 }
 .foot-legal { font-size: .72rem; color: rgba(238,228,214,.5); line-height: 1.6; }
 .foot-disclaimer { font-size: .68rem; color: rgba(238,228,214,.42); max-width: 55ch; line-height: 1.7; }
+
+/* ---- Appel découverte ---- */
+.decouverte-band {
+  background: linear-gradient(135deg, var(--sage-dk) 0%, #5A8A74 100%);
+  color: #fff;
+  padding-block: 4.5rem;
+  text-align: center;
+  padding-left:  max(24px, env(safe-area-inset-left,  0px));
+  padding-right: max(24px, env(safe-area-inset-right, 0px));
+}
+.decouverte-band .section-label { color: rgba(255,255,255,.75); }
+.decouverte-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem; }
+.btn-white { background: #fff; color: var(--sage-dk); border: 2px solid #fff; border-radius: 2px; padding: .75rem 1.6rem; font-size: .88rem; letter-spacing: .06em; text-transform: uppercase; text-decoration: none; font-weight: 500; transition: background .2s, color .2s; display: inline-block; }
+.btn-white:hover { background: transparent; color: #fff; }
+.btn-outline-white { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,.65); border-radius: 2px; padding: .75rem 1.6rem; font-size: .88rem; letter-spacing: .06em; text-transform: uppercase; text-decoration: none; transition: border-color .2s; display: inline-flex; align-items: center; gap: .4rem; }
+.btn-outline-white:hover { border-color: #fff; }
+/* ---- Urgence reason ---- */
+.reason-cat-urgence {
+  grid-column: 1 / -1;
+  border-top: 2px solid #C0392B;
+  padding-top: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+@media (max-width: 600px) { .reason-cat-urgence { grid-template-columns: 1fr; } }
+.reason-cat-urgence .reason-title { color: #C0392B; }
+.urgence-desc { font-size: .87rem; color: var(--text-mid); line-height: 1.72; }
+.urgence-cta { margin-top: .75rem; display: inline-flex; align-items: center; gap: .4rem; font-size: .8rem; letter-spacing: .05em; text-transform: uppercase; color: #C0392B; text-decoration: none; border: 1px solid #C0392B; border-radius: 2px; padding: .4rem .9rem; }
+.urgence-cta:hover { background: #C0392B; color: #fff; }
 </style>
 </head>
 <body>
@@ -1044,7 +1075,7 @@ footer { background: #322820; color: #EEE4D6; }
       </div>
       <div>
         <div class="nav-name">Orévia Soins</div>
-        <div class="nav-subtitle">Magnétisme &amp; Énergétique · Mesland</div>
+        <div class="nav-subtitle">Magnétisme &amp; Énergétique, Mesland</div>
       </div>
     </a>
     <ul class="nav-links">
@@ -1068,7 +1099,7 @@ footer { background: #322820; color: #EEE4D6; }
 <!-- ========== HERO ========== -->
 <section class="hero" id="hero" aria-labelledby="hero-title">
   <div class="hero-content">
-    <div class="hero-eyebrow" aria-hidden="true">Cabinet à Mesland, Loir-et-Cher · Séances à distance</div>
+    <div class="hero-eyebrow" aria-hidden="true">Cabinet à Mesland, Loir-et-Cher, Séances à distance</div>
     <h1 class="hero-h1" id="hero-title">
       Un espace <em>pour<br>prendre soin<br>de vous</em>
     </h1>
@@ -1152,118 +1183,20 @@ footer { background: #322820; color: #EEE4D6; }
   </div>
 </div>
 
-<!-- ========== ABOUT TEASER ========== -->
-<section class="section" id="qui-suis-je" aria-labelledby="about-title">
-  <div class="container">
-    <div class="intro-grid">
-      <div class="intro-img" role="img" aria-label="Vue du cabinet de Marie-Pierre Villermain">
-        <img src="images/cabinet2.jpg"
-             alt="Cabinet de Marie-Pierre — bibliothèque patinée, table de soin et lumière douce"
-             style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 25%;">
-        <div class="intro-img-accent"></div>
-      </div>
-
-      <div class="intro-text">
-        <div class="section-label">Mon histoire</div>
-        <h2 id="about-title">De l'école de commerce au magnétisme, le chemin d'une vocation</h2>
-        <p>Il m'a fallu du temps pour reconnaître ce qui était là depuis toujours — cette sensibilité particulière, cette façon de ressentir les énergies autour de moi. L'école de commerce, la direction d'entreprise, les objectifs, les tableaux de bord... J'ai suivi ce chemin parce que c'est celui qu'on m'avait montré.</p>
-        <p>Jusqu'au burn-out. Cette frontière que le corps trace quand on ne l'écoute plus. Cette période m'a brisée, puis reconstruite différemment. Dans ce silence forcé, j'ai appris à m'écouter vraiment, à reconnaître les signaux que j'avais toujours ignorés.</p>
-        <p>C'est là que j'ai découvert le magnétisme et les soins énergétiques — d'abord comme patiente, puis comme praticienne. Formée auprès de plusieurs enseignants, j'ai développé une approche qui mêle magnétisme traditionnel, travail sur les chakras et l'aura, et écoute profonde de la personne.</p>
-        <p>Depuis mon cabinet de Mesland, en Loir-et-Cher, j'accompagne des personnes de tous horizons — en présentiel ou à distance — qui cherchent à retrouver un équilibre, à traverser une période difficile, ou simplement à prendre soin d'elles autrement.</p>
-        <div class="divider"></div>
-        <a href="#deroule" class="text-link">Découvrir comment se passe une séance →</a>
-      </div>
+<!-- ========== APPEL DÉCOUVERTE ========== -->
+<section class="decouverte-band" id="appel-decouverte">
+  <div class="container" style="max-width:860px;">
+    <div class="section-label" style="color:rgba(255,255,255,.75);margin-bottom:.6rem;">Pas sûr·e que c'est pour vous ?</div>
+    <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:300;line-height:1.2;text-wrap:balance;color:#fff;margin-bottom:1rem;">Un appel de 15 minutes,<br>gratuit, sans engagement.</h2>
+    <p style="font-size:.97rem;color:rgba(255,255,255,.88);max-width:52ch;margin:0 auto 0.6rem;line-height:1.75;">Tant que ça ne fait pas de mal — ça fait du bien. Appelez ou réservez un créneau pour discuter simplement de ce qui vous amène. Aucune obligation.</p>
+    <p style="font-size:.82rem;color:rgba(255,255,255,.65);margin-bottom:0;font-style:italic;">Ce n'est pas une démarche commerciale. C'est une invitation à essayer.</p>
+    <div class="decouverte-actions">
+      <a href="https://calendly.com/soins-orevia" target="_blank" rel="noopener" class="btn-white">Réserver mon appel découverte — gratuit</a>
+      <a href="tel:0677839329" class="btn-outline-white">
+        <svg width="13" height="13" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 1h2.5l1 2.5-1.5 1a7 7 0 003.5 3.5l1-1.5L11 7.5V10a1 1 0 01-1 1A10 10 0 011 2a1 1 0 011-1z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/></svg>
+        Appeler directement → 06 77 83 93 29
+      </a>
     </div>
-  </div>
-</section>
-
-<!-- ========== SERVICES ========== -->
-<section class="section-warm" id="services" aria-labelledby="services-title">
-  <div class="container">
-    <div class="section-header">
-      <div class="section-label">Mes séances</div>
-      <h2 id="services-title">Un accompagnement adapté à votre situation</h2>
-      <p>Chaque séance dure environ 90 minutes. Elle commence toujours par un échange, pour que je comprenne au mieux ce qui vous amène et ce que vous attendez.</p>
-    </div>
-    <div class="services-grid">
-      <div class="service-card">
-        <div class="svc-icon" aria-hidden="true">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-            <path d="M10 2C7.24 2 5 4.24 5 7c0 4.25 5 9 5 9s5-4.75 5-9c0-2.76-2.24-5-5-5z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
-            <circle cx="10" cy="7" r="2" stroke="currentColor" stroke-width="1.4"/>
-          </svg>
-        </div>
-        <h3 class="svc-name">Séance au cabinet</h3>
-        <p class="svc-desc">Dans un cadre chaleureux à Mesland. Un temps d'échange d'abord, puis une séance énergétique personnalisée selon votre situation.</p>
-        <div class="svc-details">
-          <span class="svc-detail">
-            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true"><circle cx="6.5" cy="6.5" r="5.5" stroke="currentColor" stroke-width="1"/><path d="M6.5 3.5v3l2 1.5" stroke="currentColor" stroke-width="1" stroke-linecap="round"/></svg>
-            90 min environ
-          </span>
-          <span class="svc-detail">
-            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true"><rect x="1" y="1" width="11" height="11" rx="2" stroke="currentColor" stroke-width="1"/><path d="M1 5h11M4.5 1v4M8.5 1v4" stroke="currentColor" stroke-width="1"/></svg>
-            Lundi au samedi
-          </span>
-        </div>
-        <div class="svc-price">75 € <span>/ séance</span></div>
-        <p style="font-size:.75rem;color:var(--sage-dk);margin-top:-.3rem;">Tarif libre sur justificatif →</p>
-        <a href="https://calendly.com/soins-orevia" target="_blank" rel="noopener" class="btn btn-primary" style="text-align:center;margin-top:.25rem;">Réserver au cabinet</a>
-      </div>
-
-      <div class="service-card">
-        <div class="svc-icon" aria-hidden="true">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-            <rect x="2" y="4" width="16" height="11" rx="2" stroke="currentColor" stroke-width="1.4"/>
-            <circle cx="10" cy="9.5" r="2.2" stroke="currentColor" stroke-width="1.2"/>
-            <path d="M7 15v2M13 15v2M4.5 17h11" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
-          </svg>
-        </div>
-        <h3 class="svc-name">Séance à distance</h3>
-        <p class="svc-desc">En visioconférence, pour les personnes qui ne peuvent pas se déplacer. La distance ne fait pas obstacle à l'accompagnement énergétique.</p>
-        <div class="svc-details">
-          <span class="svc-detail">
-            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true"><circle cx="6.5" cy="6.5" r="5.5" stroke="currentColor" stroke-width="1"/><path d="M6.5 3.5v3l2 1.5" stroke="currentColor" stroke-width="1" stroke-linecap="round"/></svg>
-            90 min environ
-          </span>
-          <span class="svc-detail">
-            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true"><circle cx="6.5" cy="6.5" r="5.5" stroke="currentColor" stroke-width="1"/><path d="M3 6.5a3.5 3.5 0 007 0m-7 0a3.5 3.5 0 017 0M6.5 1v11" stroke="currentColor" stroke-width="1"/></svg>
-            Partout en France
-          </span>
-        </div>
-        <div class="svc-price">75 € <span>/ séance</span></div>
-        <p style="font-size:.75rem;color:var(--sage-dk);margin-top:-.3rem;">Tarif libre sur justificatif →</p>
-        <a href="https://calendly.com/soins-orevia" target="_blank" rel="noopener" class="btn btn-primary" style="text-align:center;margin-top:.25rem;">Réserver en visio</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ========== STEPS ========== -->
-<section class="section" id="deroule" aria-labelledby="steps-title">
-  <div class="container">
-    <div class="section-header">
-      <div class="section-label">Déroulement</div>
-      <h2 id="steps-title">Comment se passe une séance ?</h2>
-      <p>Une séance dure environ 1 h 30. Elle se déroule en deux temps principaux, à votre rythme, dans un espace d'accueil sans jugement.</p>
-    </div>
-    <div class="steps-grid">
-      <div class="step">
-        <div class="step-num" aria-hidden="true">01</div>
-        <h3 class="step-title">Un temps d'échange</h3>
-        <p class="step-desc">Nous prenons 15 à 20 minutes pour discuter. Vous m'expliquez ce qui vous amène, ce que vous ressentez, ce que vous attendez. Je suis là pour écouter, simplement et sans jugement.</p>
-      </div>
-      <div class="step">
-        <div class="step-num" aria-hidden="true">02</div>
-        <h3 class="step-title">La séance énergétique</h3>
-        <p class="step-desc">J'adapte mon protocole à votre situation. Mon travail s'articule autour de la libération des énergies ressenties comme stagnantes et du rééquilibrage, avec une attention particulière aux chakras et à l'aura.</p>
-      </div>
-      <div class="step">
-        <div class="step-num" aria-hidden="true">03</div>
-        <h3 class="step-title">Un temps pour soi</h3>
-        <p class="step-desc">Chaque expérience est personnelle. Je vous accueille avec bienveillance, sans attente particulière de résultat, dans le respect de votre rythme et de votre ressenti.</p>
-      </div>
-    </div>
-    <a href="#faq" class="btn btn-outline" style="margin-top:2.5rem;display:inline-block;">Questions fréquentes →</a>
   </div>
 </section>
 
@@ -1320,23 +1253,165 @@ footer { background: #322820; color: #EEE4D6; }
         </ul>
       </div>
 
-      <div class="reason-cat-full" role="listitem">
+      <div class="reason-cat" role="listitem">
         <div class="reason-title">
-          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true"><circle cx="7.5" cy="6" r="4" stroke="currentColor" stroke-width="1.1"/><path d="M4.5 11c0 1.7 1.3 3 3 3s3-1.3 3-3" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg>
-          Accompagnement maternité
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true"><path d="M7.5 2a4 4 0 100 8 4 4 0 000-8zM1 13c0-3 2.9-5 6.5-5S14 10 14 13" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg>
+          Accompagnement cancer
         </div>
-        <p style="font-size:.87rem;color:var(--text-mid);line-height:1.72;max-width:70ch;">
-          Un espace d'écoute et de bien-être pour les femmes en période de désir d'enfant ou de grossesse.
-          Cet accompagnement énergétique est complémentaire et ne remplace jamais le suivi médical ou obstétrical.
-        </p>
+        <ul class="reason-list">
+          <li>Soutien pendant les traitements</li>
+          <li>Mieux supporter la chimio</li>
+          <li>Accompagnement énergétique doux</li>
+          <li>Réduction de la fatigue</li>
+          <li>Soutien émotionnel</li>
+        </ul>
+        <p style="font-size:.75rem;color:var(--text-lt);margin-top:.6rem;font-style:italic;">Complémentaire aux soins médicaux, jamais un substitut.</p>
       </div>
+
+      <div class="reason-cat-urgence" role="listitem">
+        <div>
+          <div class="reason-title">
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true"><path d="M7.5 1L1 13.5h13L7.5 1z" stroke="#C0392B" stroke-width="1.1" stroke-linejoin="round"/><path d="M7.5 6v3M7.5 11h.01" stroke="#C0392B" stroke-width="1.5" stroke-linecap="round"/></svg>
+            Soins en urgence
+          </div>
+          <ul class="reason-list" style="margin-top:.6rem;">
+            <li>Brûlures</li>
+            <li>Zona</li>
+            <li>Douleurs aiguës</li>
+          </ul>
+        </div>
+        <div>
+          <p class="urgence-desc"><strong>Ne pas attendre.</strong> Plus c'est pris tôt, mieux ça fonctionne. Pour une brûlure ou un zona, chaque heure compte — n'ayez pas peur d'appeler même en urgence.</p>
+          <a href="tel:0677839329" class="urgence-cta">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 1h2.5l1 2.5-1.5 1a7 7 0 003.5 3.5l1-1.5L11 7.5V10a1 1 0 01-1 1A10 10 0 011 2a1 1 0 011-1z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/></svg>
+            Appel urgence → 06 77 83 93 29
+          </a>
+        </div>
+      </div>
+
     </div>
+    <p style="font-size:.8rem;color:var(--text-lt);margin-top:1.5rem;font-style:italic;">Accompagnement maternité disponible — grossesse, désir d'enfant. Sur demande.</p>
 
     <div class="disclaimer" role="note" aria-label="Mention légale importante">
       <p>Le magnétisme et les pratiques énergétiques proposées relèvent du bien-être et de l'accompagnement personnel. Ils ne constituent pas des actes médicaux et ne permettent pas de diagnostiquer ou de traiter une maladie. Ils ne remplacent jamais une consultation, un traitement ou un suivi auprès d'un professionnel de santé.</p>
     </div>
   </div>
 </section>
+<!-- ========== STEPS ========== -->
+<section class="section" id="deroule" aria-labelledby="steps-title">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Déroulement</div>
+      <h2 id="steps-title">Comment se passe une séance ?</h2>
+      <p>Une séance dure environ 1 h 30. Elle se déroule en deux temps principaux, à votre rythme, dans un espace d'accueil sans jugement.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step">
+        <div class="step-num" aria-hidden="true">01</div>
+        <h3 class="step-title">Un temps d'échange</h3>
+        <p class="step-desc">Nous prenons 15 à 20 minutes pour discuter. Vous m'expliquez ce qui vous amène, ce que vous ressentez, ce que vous attendez. Je suis là pour écouter, simplement et sans jugement.</p>
+      </div>
+      <div class="step">
+        <div class="step-num" aria-hidden="true">02</div>
+        <h3 class="step-title">La séance énergétique</h3>
+        <p class="step-desc">J'adapte mon protocole à votre situation. Mon travail s'articule autour de la libération des énergies ressenties comme stagnantes et du rééquilibrage, avec une attention particulière aux chakras et à l'aura.</p>
+      </div>
+      <div class="step">
+        <div class="step-num" aria-hidden="true">03</div>
+        <h3 class="step-title">Un temps pour soi</h3>
+        <p class="step-desc">Chaque expérience est personnelle. Je vous accueille avec bienveillance, dans le respect de votre rythme et de votre ressenti.</p>
+      </div>
+    </div>
+    <a href="#faq" class="btn btn-outline" style="margin-top:2.5rem;display:inline-block;">Questions fréquentes →</a>
+  </div>
+</section>
+
+<!-- ========== SERVICES ========== -->
+<section class="section-warm" id="services" aria-labelledby="services-title">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Mes séances</div>
+      <h2 id="services-title">Un accompagnement adapté à votre situation</h2>
+      <p>Chaque séance dure environ 90 minutes. Elle commence toujours par un échange, pour que je comprenne au mieux ce qui vous amène et ce que vous attendez.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="svc-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M10 2C7.24 2 5 4.24 5 7c0 4.25 5 9 5 9s5-4.75 5-9c0-2.76-2.24-5-5-5z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+            <circle cx="10" cy="7" r="2" stroke="currentColor" stroke-width="1.4"/>
+          </svg>
+        </div>
+        <h3 class="svc-name">Séance au cabinet</h3>
+        <p class="svc-desc">Dans un cadre chaleureux à Mesland. Un temps d'échange d'abord, puis une séance énergétique personnalisée selon votre situation.</p>
+        <div class="svc-details">
+          <span class="svc-detail">
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true"><circle cx="6.5" cy="6.5" r="5.5" stroke="currentColor" stroke-width="1"/><path d="M6.5 3.5v3l2 1.5" stroke="currentColor" stroke-width="1" stroke-linecap="round"/></svg>
+            90 min environ
+          </span>
+          <span class="svc-detail">
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true"><rect x="1" y="1" width="11" height="11" rx="2" stroke="currentColor" stroke-width="1"/><path d="M1 5h11M4.5 1v4M8.5 1v4" stroke="currentColor" stroke-width="1"/></svg>
+            Lundi au samedi
+          </span>
+        </div>
+        <div class="svc-price">75 € <span>/ séance</span></div>
+        <p style="font-size:.75rem;color:var(--sage-dk);margin-top:-.3rem;">Tarif libre sur justificatif →</p>
+        <a href="https://calendly.com/soins-orevia" target="_blank" rel="noopener" class="btn btn-primary" style="text-align:center;margin-top:.25rem;">Réserver au cabinet</a>
+      </div>
+
+      <div class="service-card">
+        <div class="svc-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <rect x="2" y="4" width="16" height="11" rx="2" stroke="currentColor" stroke-width="1.4"/>
+            <circle cx="10" cy="9.5" r="2.2" stroke="currentColor" stroke-width="1.2"/>
+            <path d="M7 15v2M13 15v2M4.5 17h11" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3 class="svc-name">Séance à distance</h3>
+        <p class="svc-desc">Par téléphone, par appel ou en Visio, pour les personnes qui ne peuvent pas se déplacer. La distance ne fait pas obstacle à l'accompagnement énergétique.</p>
+        <div class="svc-details">
+          <span class="svc-detail">
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true"><circle cx="6.5" cy="6.5" r="5.5" stroke="currentColor" stroke-width="1"/><path d="M6.5 3.5v3l2 1.5" stroke="currentColor" stroke-width="1" stroke-linecap="round"/></svg>
+            90 min environ
+          </span>
+          <span class="svc-detail">
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true"><circle cx="6.5" cy="6.5" r="5.5" stroke="currentColor" stroke-width="1"/><path d="M3 6.5a3.5 3.5 0 007 0m-7 0a3.5 3.5 0 017 0M6.5 1v11" stroke="currentColor" stroke-width="1"/></svg>
+            Partout en France
+          </span>
+        </div>
+        <div class="svc-price">75 € <span>/ séance</span></div>
+        <p style="font-size:.75rem;color:var(--sage-dk);margin-top:-.3rem;">Tarif libre sur justificatif →</p>
+        <a href="https://calendly.com/soins-orevia" target="_blank" rel="noopener" class="btn btn-primary" style="text-align:center;margin-top:.25rem;">Réserver en visio</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== ABOUT TEASER ========== -->
+<section class="section" id="qui-suis-je" aria-labelledby="about-title">
+  <div class="container">
+    <div class="intro-grid">
+      <div class="intro-img" role="img" aria-label="Vue du cabinet de Marie-Pierre Villermain">
+        <img src="images/cabinet2.jpg"
+             alt="Cabinet de Marie-Pierre — bibliothèque patinée, table de soin et lumière douce"
+             style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 25%;">
+        <div class="intro-img-accent"></div>
+      </div>
+
+      <div class="intro-text">
+        <div class="section-label">Mon histoire</div>
+        <h2 id="about-title">De l'école de commerce au magnétisme, le chemin d'une vocation</h2>
+        <p>Il m'a fallu du temps pour reconnaître ce qui était là depuis toujours — cette sensibilité particulière, cette façon de ressentir les énergies autour de moi. L'école de commerce, la direction d'entreprise, les objectifs, les tableaux de bord... J'ai suivi ce chemin parce que c'est celui qu'on m'avait montré.</p>
+        <p>Jusqu'au burn-out. Cette frontière que le corps trace quand on ne l'écoute plus. Cette période m'a brisée, puis reconstruite différemment. Dans ce silence forcé, j'ai appris à m'écouter vraiment, à reconnaître les signaux que j'avais toujours ignorés.</p>
+        <p>C'est là que j'ai découvert le magnétisme et les soins énergétiques — d'abord comme patiente, puis comme praticienne. Formée auprès de plusieurs enseignants, j'ai développé une approche qui mêle magnétisme traditionnel, travail sur les chakras et l'aura, et écoute profonde de la personne.</p>
+        <p>Depuis mon cabinet de Mesland, en Loir-et-Cher, j'accompagne des personnes de tous horizons — en présentiel ou à distance — qui cherchent à retrouver un équilibre, à traverser une période difficile, ou simplement à prendre soin d'elles autrement.</p>
+        <div class="divider"></div>
+        <a href="#deroule" class="text-link">Découvrir comment se passe une séance →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <!-- ========== CTA ========== -->
 <section class="cta-section" aria-labelledby="cta-title">
@@ -1356,7 +1431,7 @@ footer { background: #322820; color: #EEE4D6; }
       </span>
       <span class="cta-info-item">
         <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true"><circle cx="6.5" cy="6.5" r="5.5" stroke="currentColor" stroke-width="1"/><path d="M3 6.5a3.5 3.5 0 007 0m-7 0a3.5 3.5 0 017 0M6.5 1v11" stroke="currentColor" stroke-width="1"/></svg>
-        Cabinet ou visioconférence
+        Cabinet ou Visio
       </span>
     </div>
   </div>
@@ -1494,7 +1569,7 @@ footer { background: #322820; color: #EEE4D6; }
           <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
           <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
         </svg>
-        31 avis Google · Note moyenne 4,9 / 5
+        31 avis Google, Note moyenne 4,9 / 5
       </span>
       <a href="https://www.google.com/maps/search/Marie-Pierre+Villermain+Mesland" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:.8rem;padding:.5rem 1.1rem;">Voir tous les avis →</a>
     </div>
@@ -1533,7 +1608,7 @@ footer { background: #322820; color: #EEE4D6; }
           Les séances à distance sont-elles aussi efficaces qu'en cabinet ?
           <span class="faq-icon" aria-hidden="true"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><line x1="5.5" y1="1" x2="5.5" y2="10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="1" y1="5.5" x2="10" y2="5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
         </button>
-        <div class="faq-body"><div class="faq-inner">Oui. Le travail énergétique ne connaît pas de frontières géographiques. Beaucoup de personnes qui travaillent régulièrement avec moi le font à distance, depuis la France entière ou d'autres pays francophones. La séance se déroule en visioconférence : nous échangeons d'abord, puis je travaille à distance pendant que vous êtes chez vous, dans votre environnement familier.</div></div>
+        <div class="faq-body"><div class="faq-inner">Oui. Le travail énergétique ne connaît pas de frontières géographiques. Beaucoup de personnes qui travaillent régulièrement avec moi le font à distance, depuis la France entière ou d'autres pays francophones. La séance se déroule en Visio : nous échangeons d'abord, puis je travaille à distance pendant que vous êtes chez vous, dans votre environnement familier.</div></div>
       </div>
 
       <div class="faq-item">
@@ -1557,7 +1632,7 @@ footer { background: #322820; color: #EEE4D6; }
           Comment réserver et comment ça se passe après ?
           <span class="faq-icon" aria-hidden="true"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><line x1="5.5" y1="1" x2="5.5" y2="10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="1" y1="5.5" x2="10" y2="5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
         </button>
-        <div class="faq-body"><div class="faq-inner">Vous réservez directement en ligne en choisissant la date et l'heure qui vous conviennent. Vous recevez ensuite une confirmation par email avec tous les détails pratiques. Si vous venez au cabinet, je vous rappelle l'adresse. Si vous optez pour la visioconférence, je vous envoie le lien de connexion quelques heures avant la séance.</div></div>
+        <div class="faq-body"><div class="faq-inner">Vous réservez directement en ligne en choisissant la date et l'heure qui vous conviennent. Vous recevez ensuite une confirmation par email avec tous les détails pratiques. Si vous venez au cabinet, je vous rappelle l'adresse. Si vous optez pour la Visio, je vous envoie le lien de connexion quelques heures avant la séance.</div></div>
       </div>
 
       <div class="faq-item">
@@ -1566,6 +1641,14 @@ footer { background: #322820; color: #EEE4D6; }
           <span class="faq-icon" aria-hidden="true"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><line x1="5.5" y1="1" x2="5.5" y2="10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="1" y1="5.5" x2="10" y2="5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
         </button>
         <div class="faq-body"><div class="faq-inner">En cas de grossesse, de problème cardiaque, de port d'un pacemaker ou d'antécédents psychiatriques sévères, je vous invite à m'en informer avant la séance. Nous pourrons ainsi adapter l'accompagnement ou vous orienter si nécessaire. En cas de doute, n'hésitez pas à me contacter directement avant de réserver.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-btn" aria-expanded="false">
+          Et si je n'ai pas les moyens de payer ?
+          <span class="faq-icon" aria-hidden="true"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><line x1="5.5" y1="1" x2="5.5" y2="10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="1" y1="5.5" x2="10" y2="5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+        </button>
+        <div class="faq-body"><div class="faq-inner">L'argent ne doit pas être un frein au bien-être. Marie-Pierre propose un <strong>tarif libre</strong> pour les étudiants et les demandeurs d'emploi, sur simple justificatif. Il vous suffit de le mentionner au moment de la réservation — sans jugement, sans démarche complexe. Prendre soin de soi est un droit, pas un privilège.</div></div>
       </div>
 
     </div>
@@ -1614,7 +1697,7 @@ footer { background: #322820; color: #EEE4D6; }
           </svg>
         </div>
         <div class="booking-card-title">Séance à distance</div>
-        <div class="booking-card-desc">En visioconférence, depuis chez vous.<br>Partout en France et dans la francophonie.<br>La distance ne fait pas obstacle.</div>
+        <div class="booking-card-desc">Par téléphone, par appel ou en Visio, depuis chez vous.<br>Partout en France et dans la francophonie.<br>La distance ne fait pas obstacle.</div>
         <div>
           <div class="booking-price">75 € <span>/ 90 min</span></div>
           <div class="booking-badge">
@@ -1622,11 +1705,11 @@ footer { background: #322820; color: #EEE4D6; }
             Partout en France
           </div>
         </div>
-        <a href="https://calendly.com/soins-orevia" target="_blank" rel="noopener" class="btn btn-primary" style="text-align:center;">Réserver en visioconférence</a>
+        <a href="https://calendly.com/soins-orevia" target="_blank" rel="noopener" class="btn btn-primary" style="text-align:center;">Réserver en Visio</a>
       </div>
     </div>
 
-    <p class="booking-note">Réservation en ligne · Confirmation immédiate par email · Annulation possible 24h avant</p>
+    <p class="booking-note">Réservation en ligne, Confirmation immédiate par email, Annulation possible 24h avant</p>
   </div>
 </section>
 
@@ -1641,7 +1724,7 @@ footer { background: #322820; color: #EEE4D6; }
           <dt class="info-dt">Adresse</dt>
           <dd class="info-dd">7 route de Touraine<br>41150 Mesland</dd>
           <dt class="info-dt">Séances</dt>
-          <dd class="info-dd">En cabinet · En visioconférence</dd>
+          <dd class="info-dd">En cabinet, En Visio</dd>
           <dt class="info-dt">Disponibilités</dt>
           <dd class="info-dd">Lundi au samedi</dd>
           <dt class="info-dt">Réservation</dt>
@@ -1678,7 +1761,7 @@ footer { background: #322820; color: #EEE4D6; }
     <div>
       <img src="images/logo-orevia.svg" alt="Logo ORÉVIA" style="width:52px;height:52px;object-fit:contain;margin-bottom:.6rem;opacity:.85;filter:brightness(1.6);">
       <div class="foot-brand-name">Orévia Soins</div>
-      <div class="foot-brand-tag">Marie-Pierre Villermain · Magnétiseuse · Mesland</div>
+      <div class="foot-brand-tag">Marie-Pierre Villermain, Magnétiseuse, Mesland</div>
       <p class="foot-brand-desc">Cabinet de magnétisme et énergétique à Mesland (Loir-et-Cher), séances à distance pour toute la francophonie. Un accompagnement bienveillant et professionnel par Marie-Pierre Villermain.</p>
     </div>
     <nav aria-label="Liens utiles">
@@ -1705,7 +1788,7 @@ footer { background: #322820; color: #EEE4D6; }
   </div>
   <div class="footer-bottom">
     <div class="foot-legal">
-      © 2025 Orévia Soins · Marie-Pierre Villermain · SIRET 488 364 738<br>
+      © 2025 Orévia Soins, Marie-Pierre Villermain, SIRET 488 364 738<br>
       7 route de Touraine, 41150 Mesland
     </div>
     <div class="foot-disclaimer">
